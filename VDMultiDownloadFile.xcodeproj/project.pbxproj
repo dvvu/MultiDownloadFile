@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F09D8ED16BCA6B977A1909FA /* Pods_VDMultiDownloadFile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7912B296606073F3B5E5F2B2 /* Pods_VDMultiDownloadFile.framework */; };
+		FA3F00CF1FCE57DE000CBCA3 /* DownloadFileTableCellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F00CB1FCE57DE000CBCA3 /* DownloadFileTableCellObject.m */; };
+		FA3F00D01FCE57DE000CBCA3 /* DownloadFileTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F00CD1FCE57DE000CBCA3 /* DownloadFileTableViewCell.m */; };
+		FA3F00D61FCE61AA000CBCA3 /* NIMutableTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F00D51FCE61AA000CBCA3 /* NIMutableTableViewModel.m */; };
+		FA3F00DA1FCE61C0000CBCA3 /* NITableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F00D71FCE61C0000CBCA3 /* NITableViewModel.m */; };
+		FA3F00DE1FCE61D8000CBCA3 /* NIActions.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F00DD1FCE61D8000CBCA3 /* NIActions.m */; };
+		FA3F00E31FCE6271000CBCA3 /* NIDebuggingTools.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F00E11FCE6271000CBCA3 /* NIDebuggingTools.m */; };
+		FA6F29091FCD370800D1F076 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6F29081FCD370800D1F076 /* AppDelegate.m */; };
+		FA6F290C1FCD370800D1F076 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6F290B1FCD370800D1F076 /* ViewController.m */; };
+		FA6F290F1FCD370800D1F076 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6F290D1FCD370800D1F076 /* Main.storyboard */; };
+		FA6F29121FCD370800D1F076 /* VDMultiDownloadFile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA6F29101FCD370800D1F076 /* VDMultiDownloadFile.xcdatamodeld */; };
+		FA6F29141FCD370800D1F076 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6F29131FCD370800D1F076 /* Assets.xcassets */; };
+		FA6F29171FCD370800D1F076 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6F29151FCD370800D1F076 /* LaunchScreen.storyboard */; };
+		FA6F291A1FCD370800D1F076 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6F29191FCD370800D1F076 /* main.m */; };
+		FA6F29231FCD37C300D1F076 /* VDDownloadFileItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6F29221FCD37C300D1F076 /* VDDownloadFileItem.m */; };
+		FA6F29261FCD37EB00D1F076 /* VDMultiDownloadFIleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6F29251FCD37EB00D1F076 /* VDMultiDownloadFIleManager.m */; };
+		FA6F29341FCD399200D1F076 /* VDTSMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6F29321FCD399200D1F076 /* VDTSMutableArray.m */; };
+		FA6F29351FCD399200D1F076 /* VDTSMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6F29331FCD399200D1F076 /* VDTSMutableDictionary.m */; };
+		FA6F29381FCD44EF00D1F076 /* NSFileManager+VDNSFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6F29371FCD44EF00D1F076 /* NSFileManager+VDNSFileManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		640F7E614D4828A384ED6C4E /* Pods-VDMultiDownloadFile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VDMultiDownloadFile.release.xcconfig"; path = "Pods/Target Support Files/Pods-VDMultiDownloadFile/Pods-VDMultiDownloadFile.release.xcconfig"; sourceTree = "<group>"; };
+		7912B296606073F3B5E5F2B2 /* Pods_VDMultiDownloadFile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VDMultiDownloadFile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5D0ADCFB8100EFB23CC446E /* Pods-VDMultiDownloadFile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VDMultiDownloadFile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VDMultiDownloadFile/Pods-VDMultiDownloadFile.debug.xcconfig"; sourceTree = "<group>"; };
+		FA3F00CB1FCE57DE000CBCA3 /* DownloadFileTableCellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadFileTableCellObject.m; sourceTree = "<group>"; };
+		FA3F00CC1FCE57DE000CBCA3 /* DownloadFileTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadFileTableViewCell.h; sourceTree = "<group>"; };
+		FA3F00CD1FCE57DE000CBCA3 /* DownloadFileTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadFileTableViewCell.m; sourceTree = "<group>"; };
+		FA3F00CE1FCE57DE000CBCA3 /* DownloadFileTableCellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadFileTableCellObject.h; sourceTree = "<group>"; };
+		FA3F00D11FCE57FC000CBCA3 /* MultiDownlodFileCellActionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiDownlodFileCellActionDelegate.h; sourceTree = "<group>"; };
+		FA3F00D31FCE61A9000CBCA3 /* NIMutableTableViewModel+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NIMutableTableViewModel+Private.h"; sourceTree = "<group>"; };
+		FA3F00D41FCE61AA000CBCA3 /* NIMutableTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMutableTableViewModel.h; sourceTree = "<group>"; };
+		FA3F00D51FCE61AA000CBCA3 /* NIMutableTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMutableTableViewModel.m; sourceTree = "<group>"; };
+		FA3F00D71FCE61C0000CBCA3 /* NITableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NITableViewModel.m; sourceTree = "<group>"; };
+		FA3F00D81FCE61C0000CBCA3 /* NITableViewModel+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NITableViewModel+Private.h"; sourceTree = "<group>"; };
+		FA3F00D91FCE61C0000CBCA3 /* NITableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NITableViewModel.h; sourceTree = "<group>"; };
+		FA3F00DB1FCE61D8000CBCA3 /* NIActions+Subclassing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NIActions+Subclassing.h"; sourceTree = "<group>"; };
+		FA3F00DC1FCE61D8000CBCA3 /* NIActions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIActions.h; sourceTree = "<group>"; };
+		FA3F00DD1FCE61D8000CBCA3 /* NIActions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIActions.m; sourceTree = "<group>"; };
+		FA3F00DF1FCE6240000CBCA3 /* NimbusCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NimbusCore.h; sourceTree = "<group>"; };
+		FA3F00E01FCE6240000CBCA3 /* NimbusCore+Additions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NimbusCore+Additions.h"; sourceTree = "<group>"; };
+		FA3F00E11FCE6271000CBCA3 /* NIDebuggingTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIDebuggingTools.m; sourceTree = "<group>"; };
+		FA3F00E21FCE6271000CBCA3 /* NIDebuggingTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIDebuggingTools.h; sourceTree = "<group>"; };
+		FA6F29041FCD370800D1F076 /* VDMultiDownloadFile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VDMultiDownloadFile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA6F29071FCD370800D1F076 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FA6F29081FCD370800D1F076 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FA6F290A1FCD370800D1F076 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FA6F290B1FCD370800D1F076 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FA6F290E1FCD370800D1F076 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA6F29111FCD370800D1F076 /* VDMultiDownloadFile.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VDMultiDownloadFile.xcdatamodel; sourceTree = "<group>"; };
+		FA6F29131FCD370800D1F076 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA6F29161FCD370800D1F076 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA6F29181FCD370800D1F076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA6F29191FCD370800D1F076 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA6F29211FCD37C300D1F076 /* VDDownloadFileItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VDDownloadFileItem.h; sourceTree = "<group>"; };
+		FA6F29221FCD37C300D1F076 /* VDDownloadFileItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VDDownloadFileItem.m; sourceTree = "<group>"; };
+		FA6F29241FCD37EB00D1F076 /* VDMultiDownloadFIleManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VDMultiDownloadFIleManager.h; sourceTree = "<group>"; };
+		FA6F29251FCD37EB00D1F076 /* VDMultiDownloadFIleManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VDMultiDownloadFIleManager.m; sourceTree = "<group>"; };
+		FA6F29281FCD38C600D1F076 /* VDDownloadFileStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VDDownloadFileStatus.h; sourceTree = "<group>"; };
+		FA6F29301FCD399200D1F076 /* VDTSMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDTSMutableDictionary.h; sourceTree = "<group>"; };
+		FA6F29311FCD399200D1F076 /* VDTSMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDTSMutableArray.h; sourceTree = "<group>"; };
+		FA6F29321FCD399200D1F076 /* VDTSMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDTSMutableArray.m; sourceTree = "<group>"; };
+		FA6F29331FCD399200D1F076 /* VDTSMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDTSMutableDictionary.m; sourceTree = "<group>"; };
+		FA6F29361FCD44EF00D1F076 /* NSFileManager+VDNSFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+VDNSFileManager.h"; sourceTree = "<group>"; };
+		FA6F29371FCD44EF00D1F076 /* NSFileManager+VDNSFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+VDNSFileManager.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA6F29011FCD370800D1F076 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F09D8ED16BCA6B977A1909FA /* Pods_VDMultiDownloadFile.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BBFFA0FD598262BDFA6A51C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7912B296606073F3B5E5F2B2 /* Pods_VDMultiDownloadFile.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E792054AB679DA6ED1178AE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5D0ADCFB8100EFB23CC446E /* Pods-VDMultiDownloadFile.debug.xcconfig */,
+				640F7E614D4828A384ED6C4E /* Pods-VDMultiDownloadFile.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA3F00CA1FCE57D0000CBCA3 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				FA3F00D11FCE57FC000CBCA3 /* MultiDownlodFileCellActionDelegate.h */,
+				FA3F00CE1FCE57DE000CBCA3 /* DownloadFileTableCellObject.h */,
+				FA3F00CB1FCE57DE000CBCA3 /* DownloadFileTableCellObject.m */,
+				FA3F00CC1FCE57DE000CBCA3 /* DownloadFileTableViewCell.h */,
+				FA3F00CD1FCE57DE000CBCA3 /* DownloadFileTableViewCell.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		FA3F00D21FCE619B000CBCA3 /* CustomViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA3F00E21FCE6271000CBCA3 /* NIDebuggingTools.h */,
+				FA3F00E11FCE6271000CBCA3 /* NIDebuggingTools.m */,
+				FA3F00DF1FCE6240000CBCA3 /* NimbusCore.h */,
+				FA3F00E01FCE6240000CBCA3 /* NimbusCore+Additions.h */,
+				FA3F00DC1FCE61D8000CBCA3 /* NIActions.h */,
+				FA3F00DD1FCE61D8000CBCA3 /* NIActions.m */,
+				FA3F00DB1FCE61D8000CBCA3 /* NIActions+Subclassing.h */,
+				FA3F00D91FCE61C0000CBCA3 /* NITableViewModel.h */,
+				FA3F00D71FCE61C0000CBCA3 /* NITableViewModel.m */,
+				FA3F00D81FCE61C0000CBCA3 /* NITableViewModel+Private.h */,
+				FA3F00D41FCE61AA000CBCA3 /* NIMutableTableViewModel.h */,
+				FA3F00D51FCE61AA000CBCA3 /* NIMutableTableViewModel.m */,
+				FA3F00D31FCE61A9000CBCA3 /* NIMutableTableViewModel+Private.h */,
+			);
+			path = CustomViewModel;
+			sourceTree = "<group>";
+		};
+		FA6F28FB1FCD370800D1F076 = {
+			isa = PBXGroup;
+			children = (
+				FA6F29061FCD370800D1F076 /* VDMultiDownloadFile */,
+				FA6F29051FCD370800D1F076 /* Products */,
+				E792054AB679DA6ED1178AE3 /* Pods */,
+				BBFFA0FD598262BDFA6A51C8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA6F29051FCD370800D1F076 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA6F29041FCD370800D1F076 /* VDMultiDownloadFile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA6F29061FCD370800D1F076 /* VDMultiDownloadFile */ = {
+			isa = PBXGroup;
+			children = (
+				FA3F00D21FCE619B000CBCA3 /* CustomViewModel */,
+				FA6F29291FCD391200D1F076 /* VDThreadSafeMultiDownloadFile */,
+				FA6F29271FCD388E00D1F076 /* VDDownloadFileStatus */,
+				FA6F29201FCD377400D1F076 /* VDDownloadFileManager */,
+				FA3F00CA1FCE57D0000CBCA3 /* Demo */,
+				FA6F29071FCD370800D1F076 /* AppDelegate.h */,
+				FA6F29081FCD370800D1F076 /* AppDelegate.m */,
+				FA6F290A1FCD370800D1F076 /* ViewController.h */,
+				FA6F290B1FCD370800D1F076 /* ViewController.m */,
+				FA6F290D1FCD370800D1F076 /* Main.storyboard */,
+				FA6F29131FCD370800D1F076 /* Assets.xcassets */,
+				FA6F29151FCD370800D1F076 /* LaunchScreen.storyboard */,
+				FA6F29181FCD370800D1F076 /* Info.plist */,
+				FA6F29191FCD370800D1F076 /* main.m */,
+				FA6F29101FCD370800D1F076 /* VDMultiDownloadFile.xcdatamodeld */,
+			);
+			path = VDMultiDownloadFile;
+			sourceTree = "<group>";
+		};
+		FA6F29201FCD377400D1F076 /* VDDownloadFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				FA6F29211FCD37C300D1F076 /* VDDownloadFileItem.h */,
+				FA6F29221FCD37C300D1F076 /* VDDownloadFileItem.m */,
+				FA6F29241FCD37EB00D1F076 /* VDMultiDownloadFIleManager.h */,
+				FA6F29251FCD37EB00D1F076 /* VDMultiDownloadFIleManager.m */,
+			);
+			path = VDDownloadFileManager;
+			sourceTree = "<group>";
+		};
+		FA6F29271FCD388E00D1F076 /* VDDownloadFileStatus */ = {
+			isa = PBXGroup;
+			children = (
+				FA6F29281FCD38C600D1F076 /* VDDownloadFileStatus.h */,
+			);
+			path = VDDownloadFileStatus;
+			sourceTree = "<group>";
+		};
+		FA6F29291FCD391200D1F076 /* VDThreadSafeMultiDownloadFile */ = {
+			isa = PBXGroup;
+			children = (
+				FA6F29311FCD399200D1F076 /* VDTSMutableArray.h */,
+				FA6F29321FCD399200D1F076 /* VDTSMutableArray.m */,
+				FA6F29301FCD399200D1F076 /* VDTSMutableDictionary.h */,
+				FA6F29331FCD399200D1F076 /* VDTSMutableDictionary.m */,
+				FA6F29361FCD44EF00D1F076 /* NSFileManager+VDNSFileManager.h */,
+				FA6F29371FCD44EF00D1F076 /* NSFileManager+VDNSFileManager.m */,
+			);
+			path = VDThreadSafeMultiDownloadFile;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA6F29031FCD370800D1F076 /* VDMultiDownloadFile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA6F291D1FCD370800D1F076 /* Build configuration list for PBXNativeTarget "VDMultiDownloadFile" */;
+			buildPhases = (
+				B829DFAD1EE00ED0C45564EF /* [CP] Check Pods Manifest.lock */,
+				FA6F29001FCD370800D1F076 /* Sources */,
+				FA6F29011FCD370800D1F076 /* Frameworks */,
+				FA6F29021FCD370800D1F076 /* Resources */,
+				B2C9A15E5FEE819E1F03C9E7 /* [CP] Embed Pods Frameworks */,
+				AB324BC041E0CBFE09E8195F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VDMultiDownloadFile;
+			productName = VDMultiDownloadFile;
+			productReference = FA6F29041FCD370800D1F076 /* VDMultiDownloadFile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA6F28FC1FCD370800D1F076 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = VDPersonal;
+				TargetAttributes = {
+					FA6F29031FCD370800D1F076 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FA6F28FF1FCD370800D1F076 /* Build configuration list for PBXProject "VDMultiDownloadFile" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA6F28FB1FCD370800D1F076;
+			productRefGroup = FA6F29051FCD370800D1F076 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA6F29031FCD370800D1F076 /* VDMultiDownloadFile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA6F29021FCD370800D1F076 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6F29171FCD370800D1F076 /* LaunchScreen.storyboard in Resources */,
+				FA6F29141FCD370800D1F076 /* Assets.xcassets in Resources */,
+				FA6F290F1FCD370800D1F076 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AB324BC041E0CBFE09E8195F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VDMultiDownloadFile/Pods-VDMultiDownloadFile-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2C9A15E5FEE819E1F03C9E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VDMultiDownloadFile/Pods-VDMultiDownloadFile-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VDMultiDownloadFile/Pods-VDMultiDownloadFile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B829DFAD1EE00ED0C45564EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VDMultiDownloadFile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA6F29001FCD370800D1F076 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6F29231FCD37C300D1F076 /* VDDownloadFileItem.m in Sources */,
+				FA6F290C1FCD370800D1F076 /* ViewController.m in Sources */,
+				FA6F29381FCD44EF00D1F076 /* NSFileManager+VDNSFileManager.m in Sources */,
+				FA6F29121FCD370800D1F076 /* VDMultiDownloadFile.xcdatamodeld in Sources */,
+				FA6F29351FCD399200D1F076 /* VDTSMutableDictionary.m in Sources */,
+				FA6F29341FCD399200D1F076 /* VDTSMutableArray.m in Sources */,
+				FA3F00DE1FCE61D8000CBCA3 /* NIActions.m in Sources */,
+				FA3F00D01FCE57DE000CBCA3 /* DownloadFileTableViewCell.m in Sources */,
+				FA6F29261FCD37EB00D1F076 /* VDMultiDownloadFIleManager.m in Sources */,
+				FA3F00E31FCE6271000CBCA3 /* NIDebuggingTools.m in Sources */,
+				FA6F291A1FCD370800D1F076 /* main.m in Sources */,
+				FA3F00D61FCE61AA000CBCA3 /* NIMutableTableViewModel.m in Sources */,
+				FA6F29091FCD370800D1F076 /* AppDelegate.m in Sources */,
+				FA3F00DA1FCE61C0000CBCA3 /* NITableViewModel.m in Sources */,
+				FA3F00CF1FCE57DE000CBCA3 /* DownloadFileTableCellObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA6F290D1FCD370800D1F076 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA6F290E1FCD370800D1F076 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA6F29151FCD370800D1F076 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA6F29161FCD370800D1F076 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA6F291B1FCD370800D1F076 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FA6F291C1FCD370800D1F076 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA6F291E1FCD370800D1F076 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5D0ADCFB8100EFB23CC446E /* Pods-VDMultiDownloadFile.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2HJQ2687F;
+				INFOPLIST_FILE = VDMultiDownloadFile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VDP.Demo.VDMultiDownloadFile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA6F291F1FCD370800D1F076 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 640F7E614D4828A384ED6C4E /* Pods-VDMultiDownloadFile.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2HJQ2687F;
+				INFOPLIST_FILE = VDMultiDownloadFile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VDP.Demo.VDMultiDownloadFile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA6F28FF1FCD370800D1F076 /* Build configuration list for PBXProject "VDMultiDownloadFile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA6F291B1FCD370800D1F076 /* Debug */,
+				FA6F291C1FCD370800D1F076 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA6F291D1FCD370800D1F076 /* Build configuration list for PBXNativeTarget "VDMultiDownloadFile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA6F291E1FCD370800D1F076 /* Debug */,
+				FA6F291F1FCD370800D1F076 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FA6F29101FCD370800D1F076 /* VDMultiDownloadFile.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FA6F29111FCD370800D1F076 /* VDMultiDownloadFile.xcdatamodel */,
+			);
+			currentVersion = FA6F29111FCD370800D1F076 /* VDMultiDownloadFile.xcdatamodel */;
+			path = VDMultiDownloadFile.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FA6F28FC1FCD370800D1F076 /* Project object */;
+}
